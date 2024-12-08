@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bliss</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 1em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        aside {
+            background: #f4f4f4;
+            padding: 1em;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .dropdown {
+            margin-top: 1em;
+        }
+        .dropdown select {
+            padding: 0.5em;
+        }
+        hr {
+            border: 1px solid #ddd;
+            margin: 1.5em 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Bliss</h1>
+    <p><em>Your guide to exploring the world</em></p>
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+</nav>
+
+<main>
+    <section id="destinations">
+        <h2>Top Travel Destinations</h2>
+        <p>Explore the best travel spots around the globe.</p>
+        <h3>Categories:</h3>
+        <div class="dropdown">
+            <label for="categories"><strong>Choose a category:</strong></label>
+            <select id="categories">
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+            </select>
+        </div>
+        <br>
+        <article>
+            <h3>Must-Visit Beaches</h3>
+            <ul>
+                <li>Maldives</li>
+                <li>Bali</li>
+                <li>Hawaii</li>
+            </ul>
+        </article>
+        <hr>
+        <article>
+            <h3>Stunning Mountains</h3>
+            <ol>
+                <li>Mount Everest</li>
+                <li>Rocky Mountains</li>
+                <li>Andes</li>
+            </ol>
+        </article>
+        <hr>
+    </section>
+
+    <section id="gallery">
+        <h2>Travel Gallery</h2>
+        <p>Check out our amazing travel snapshots:</p>
+        <img src="beach.jpg" alt="Beach" width="200">
+        <img src="mountain.jpg" alt="Mountain" width="200">
+        <img src="city.jpg" alt="City" width="200">
+        <br>
+        <img src="landscape.jpg" alt="Landscape" width="200">
+        <img src="sunset.jpg" alt="Sunset" width="200">
+        <img src="wildlife.jpg" alt="Wildlife" width="200">
+        <br>
+        <video controls width="320">
+            <source src="travel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
+    </section>
+
+    <section id="reviews">
+        <h2>Submit Your Review</h2>
+        <form>
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="review"><strong>Review:</strong></label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br><br>
+            <button type="submit"><strong>Submit</strong></button>
+        </form>
+        <hr>
+    </section>
+</main>
+
+<aside>
+    <h2>Travel Tips</h2>
+    <ul>
+        <li>Pack light</li>
+        <li>Carry essentials</li>
+        <li>Plan ahead</li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2024 Travel Bliss</p>
+    <a href="#top">Return to Top</a>
+</footer>
+
+</body>
+</html>
