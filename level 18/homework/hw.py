@@ -38,4 +38,3 @@ while True:
 
 # Display the count of incorrect attempts
 print(f"Total incorrect attempts: {incorrect_attempts}")
-Explanation:
