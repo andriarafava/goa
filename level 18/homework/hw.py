@@ -83,3 +83,42 @@ while True:
 
 # Print the total number of incorrect attempts
 print(f"Number of incorrect attempts: {incorrect_attempts}")
+
+
+
+def calculator():
+    print("Welcome to the Simple Calculator!")
+    try:
+        # Input the first number
+        num1 = float(input("Enter the first number: "))
+        
+        # Input the operator
+        operator = input("Enter an operator (+, -, *, /): ")
+        
+        # Input the second number
+        num2 = float(input("Enter the second number: "))
+        
+        # Perform the calculation based on the operator
+        if operator == '+':
+            result = num1 + num2
+        elif operator == '-':
+            result = num1 - num2
+        elif operator == '*':
+            result = num1 * num2
+        elif operator == '/':
+            if num2 != 0:  # Check for division by zero
+                result = num1 / num2
+            else:
+                print("Error: Division by zero is not allowed.")
+                return
+        else:
+            print("Error: Invalid operator.")
+            return
+        
+        # Display the result
+        print(f"The result of {num1} {operator} {num2} is: {result}")
+    
+    except ValueError:
+        print("Error: Please enter valid numbers.")
+    
+    print("Thank you for using the Simple Calculator!")
