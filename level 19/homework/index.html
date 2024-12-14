@@ -159,3 +159,189 @@
 
 </body>
 </html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World - Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .dropdown {
+            position: relative; 
+        display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            padding: 1rem;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <p>Your gateway to discovering amazing places!</p>
+    </header>
+
+    <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+        <a href="#reviews">Reviews</a>
+        <div class="dropdown">
+            <span>More</span>
+            <div class="dropdown-content">
+                <a href="#audio">Audio</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <p><strong>Explore</strong> the most <em>breathtaking</em> destinations on the planet:</p>
+            <article>
+                <h3>Beach Escapes</h3>
+                <ul>
+                    <li><b>Maldives</b></li>
+                    <li><i>Bora Bora</i></li>
+                    <li><u>Hawaii</u></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Mountain Retreats</h3>
+                <ol>
+                    <li>Swiss Alps</li>
+                    <li>Rocky Mountains</li>
+                    <li>Himalayas</li>
+                </ol>
+            </article>
+            <article>
+                <h3>City Getaways</h3>
+                <ul>
+                    <li><mark>Paris</mark></li>
+                    <li><abbr title="New York City">NYC</abbr></li>
+                    <li>Tokyo</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Check out some stunning visuals:</p>
+            <img src="beach.jpg" alt="Beach" width="200">
+            <img src="mountains.jpg" alt="Mountains" width="200">
+            <img src="city.jpg" alt="City" width="200">
+            <br>
+            <img src="forest.jpg" alt="Forest" width="200">
+            <img src="desert.jpg" alt="Desert" width="200">
+            <img src="lake.jpg" alt="Lake" width="200">
+            <br>
+            <img src="waterfall.jpg" alt="Waterfall" width="200">
+            <img src="sunset.jpg" alt="Sunset" width="200">
+            <img src="island.jpg" alt="Island" width="200">
+        </section>
+
+        <hr>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <video controls width="400">
+                <source src="travel_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br><br>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Travel Video"></iframe>
+        </section>
+
+        <hr>
+
+        <section id="audio">
+            <h2>Audio Experiences</h2>
+            <audio controls>
+                <source src="ocean_waves.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br><br>
+            <audio controls>
+                <source src="birds_chirping.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <hr>
+
+        <section id="reviews">
+            <h2>Leave a Review</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+                <label for="rating">Rating:</label><br>
+                <select id="rating" name="rating">
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore the World</p>
+        <a href="#">Return to Top</a>
+    </footer>
+</body>
+</html>
