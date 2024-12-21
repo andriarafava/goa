@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements</title>
+    <style>
+        
+        .block {
+            background-color: #f0f8ff;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        .inline {
+            color: #333;
+            background-color: #ffebcd;
+            padding: 2px 5px;
+            border: 1px dashed #999;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="block">ეს არის `div` ბლოკი</div>
+    <p class="block">ეს არის `p` ელემენტი, რომელიც ასევე ბლოკია</p>
+    <section class="block">ეს არის `section` ელემენტი</section>
+    <span class="inline">ეს არის `span` ელემენტი</span>
+    <a href="#" class="inline">ეს არის ლინკი (anchor tag)</a>
+    <strong class="inline">ეს არის `strong` ტექსტი</strong>
+    
+</body>
+</html>
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        /* სქემის სტილი */
+        .table-container {
+            border: 2px solid #a9a9a9; 
+            padding: 10px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        /* ცხრილის სტილი */
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black; 
+            padding: 8px;
+            text-align: center;  
+        }
+
+        th {
+            font-weight: bold; 
+        }
+
+        .table-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- კონტეინერი ცხრილისთვის -->
+    <div class="table-container">
+        <div class="table-header">Table Header</div>
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John Einstein</td>
+                <td>14</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Grace Olive</td>
+                <td>15</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Andy Roberts</td>
+                <td>15</td>
+                <td>Fail</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
